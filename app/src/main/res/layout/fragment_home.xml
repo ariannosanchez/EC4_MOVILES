@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hola de nuevo"
+                android:textSize="30sp"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="loading.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_manual_home"
+                android:textSize="20sp"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_manual1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_italic"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_manual2"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_italic"
+                android:gravity="bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_manual3"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito_italic"
+                android:gravity="bottom"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</FrameLayout>

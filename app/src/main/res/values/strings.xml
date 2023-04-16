@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EC4</string>
+    <string name="CLIENT_ID">472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_manual_home">Manual de Usuario</string>
+    <string name="tv_manual1">- El aplicativo permitira listar y guardar una nota.</string>
+    <string name="tv_manual2">- El aplicativo listara a los iconicos personajes de TWD.</string>
+    <string name="tv_manual3">- El aplicativo tendra un apartado de información del programador.</string>
+    <string name="tv_titulo_api">Lista de Personajes</string>
+    <string name="tv_desarrollador">Desarrollado por: Arianno Sanchez Mitma</string>
+    <string name="tv_version">Version 1.0</string>
+</resources>

@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "472896184146",
+    "project_id": "fir-auth-282ef",
+    "storage_bucket": "fir-auth-282ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472896184146:android:684deb98a396fdc2e2248b",
+        "android_client_info": {
+          "package_name": "pe.edu.idat.SL76130644"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOD3pQmNgo3WRsaAjF5FqMm7b0At5cDx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472896184146:android:74d35c29af4167a0e2248b",
+        "android_client_info": {
+          "package_name": "pe.edu.idat.ariannosm.contactfirestoreapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOD3pQmNgo3WRsaAjF5FqMm7b0At5cDx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472896184146:android:9693b1361b80707de2248b",
+        "android_client_info": {
+          "package_name": "pe.edu.idat.ariannosm.loginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOD3pQmNgo3WRsaAjF5FqMm7b0At5cDx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472896184146-en4gljnnc8a21klnfj2fr1as4v73vqgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
