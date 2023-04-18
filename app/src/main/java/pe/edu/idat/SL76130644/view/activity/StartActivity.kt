@@ -2,16 +2,18 @@ package pe.edu.idat.SL76130644.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Looper
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import pe.edu.idat.SL76130644.R
 import pe.edu.idat.SL76130644.databinding.ActivityStartBinding
-import pe.edu.idat.SL76130644.view.fragment.HomeFragment
-import pe.edu.idat.SL76130644.view.fragment.InfoFragment
-import pe.edu.idat.SL76130644.view.fragment.ListFragment
-import pe.edu.idat.SL76130644.view.fragment.PasswordFragment
+import pe.edu.idat.SL76130644.view.fragment.*
 
 class StartActivity : AppCompatActivity() {
     private lateinit var binding:ActivityStartBinding
+    private var doubleBackToExitPressedOnce = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityStartBinding.inflate(layoutInflater)
@@ -37,6 +39,9 @@ class StartActivity : AppCompatActivity() {
                 R.id.nav_info ->{
                     InfoFragment()
                 }
+                R.id.nav_logout ->{
+                    LogoutFragment()
+                }
                 else ->{
                     HomeFragment()
                 }
@@ -44,5 +49,23 @@ class StartActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(R.id.fl_navigation, fragment).commit()
             return@setOnItemSelectedListener true
         }
+    }
+
+    override fun onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed()
+            Toast.makeText(this, "Saliste de la aplicación", Toast.LENGTH_SHORT).show()
+            return
+        }
+        doubleBackToExitPressedOnce = true
+        Toast.makeText(this, "Presione 2 veces para salir", Toast.LENGTH_SHORT).show()
+
+        object : CountDownTimer(2000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+            }
+            override fun onFinish() {
+                doubleBackToExitPressedOnce = false
+            }
+        }.start()
     }
 }

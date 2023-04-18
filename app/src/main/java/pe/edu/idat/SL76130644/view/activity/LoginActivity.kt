@@ -99,5 +99,6 @@ class LoginActivity : AppCompatActivity() {
     private fun goStartActivity() {
         val intent = Intent(this, StartActivity::class.java)
         startActivity(intent)
+        finish();
     }
 }

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import pe.edu.idat.SL76130644.R
 import pe.edu.idat.SL76130644.databinding.FragmentAddPasswordBinding
 
 class AddPasswordFragment : Fragment() {
@@ -47,8 +48,10 @@ class AddPasswordFragment : Fragment() {
                         Log.d("Register", "DocumentSnapshot added with ID: ${it.id}")
                         showSuccessDialog()
                         clearFields()
-                        binding.etTitulo.requestFocus()
-                        parentFragmentManager.popBackStack()
+                        val fragment = PasswordFragment()
+                        parentFragmentManager.beginTransaction()
+                            .replace(R.id.fl_navigation, fragment)
+                            .commit()
                     }
                     .addOnFailureListener{
                         Log.d("Register", "Error")

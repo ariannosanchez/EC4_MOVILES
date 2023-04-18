@@ -43,7 +43,6 @@ class PasswordFragment : Fragment() {
             val fragment = AddPasswordFragment()
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fl_navigation, fragment)
-                .addToBackStack(null)
                 .commit()
         }
     }

@@ -1,5 +1,6 @@
 package pe.edu.idat.SL76130644.view.fragment
 
+import android.app.ProgressDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,10 +25,12 @@ class ListFragment : Fragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setViews()
     }
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -37,6 +40,7 @@ class ListFragment : Fragment() {
             binding.recyclerView.adapter = CharacterAdapter(characters!!)
             binding.progress.visibility = View.GONE
         })
+
         if (savedInstanceState == null) {
             viewModel.getCharacters()
         }

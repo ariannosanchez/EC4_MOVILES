@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.fragment.AddPasswordFragment">
+    tools:context=".view.fragment.LogoutFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,15 +28,15 @@
                 android:fontFamily="@font/nunito_bold"
                 android:textColor="@color/primary"
                 android:gravity="center"
-                android:text="Información"
+                android:text="@string/tv_titulo_logout"
                 android:textSize="30sp" />
 
             <com.airbnb.lottie.LottieAnimationView
                 android:layout_width="400dp"
-                android:layout_height="500dp"
+                android:layout_height="450dp"
                 android:layout_gravity="center"
                 app:lottie_autoPlay="true"
-                app:lottie_fileName="developer.json"
+                app:lottie_fileName="logout.json"
                 app:lottie_loop="true" />
 
             <TextView
@@ -45,19 +45,22 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/nunito_italic"
                 android:gravity="center"
-                android:text="@string/tv_desarrollador"
+                android:text="@string/tv_cerrar"
                 android:textSize="19sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/nunito_italic"
+                android:textColor="@color/white"
                 android:gravity="center"
-                android:text="@string/tv_version"
-                android:textSize="19sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:text="@string/btn_cerrar"
+                android:background="@drawable/rectangle_1_shape"
+                android:layout_marginTop="32dp"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
